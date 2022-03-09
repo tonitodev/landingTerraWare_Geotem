@@ -32,14 +32,33 @@ html
 	font-size: 62.5%
 	font-family: $font1
 
+	scroll-behavior: smooth;
+	scroll-snap-type: y proximity;
+
 /* Header styles functions - only size */
 
 for titulo in 1 2 3
 	h{titulo}
-		font-size: 6rem - (1.2 * titulo)
+		font-size: 3.6rem - (1.2 * titulo)
+		line-height: 105% + (15% * titulo)
 		color: $headerColor
 
-/* Service's box styles */
+/* Paragraph's styles */
+
+.mainParagraph
+	font-size: 1.8rem
+
+.secondaryParagraph
+	font-size: 1.4rem
+
+.notesParagraph
+	font-size: 1.0rem
+
+/* hiperlinks & buttons style fonts */
+
+button, a
+	font-family: $font1
+	font-size: 1.8rem
 
 
 

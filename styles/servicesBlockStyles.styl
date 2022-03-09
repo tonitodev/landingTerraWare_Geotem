@@ -3,10 +3,36 @@ boxSizeandPosition()
 	height: auto
 	min-height: 275px
 	margin: 15px auto
+	margin-bottom: 80px
+	padding: 50px 0
+
+boxStyles()
 	border-radius: 12px
-	
+	box-shadow: 9px 9px 22px rgba(4, 33, 41, 0.25)
+
 
 .mainBanner
-	boxSizeandPosition()
 	
+	boxSizeandPosition()
+	boxStyles()
+
 	background-image: url('../assets/images/AVIFImages/modelogeofisico3dPrincipal.avif'), url('../assets/images/WEBPImages/modelogeofisico3dPrincipal.webp'), url('../assets/images/PNGimages/modelogeofisico3dPrincipal.png')
+	background-position: center
+	background-size: cover
+	background-repeat: none
+	
+	img
+		width: 240px
+		display: block
+		margin: 0 auto
+
+	h1, h2, h3, p
+		text-align: center
+		color: $baseWhite
+	
+	.mainParagraph
+		margin-top: 15px
+		font-weight: 275
+
+	.mainBanner--description
+		margin 50px 10px
