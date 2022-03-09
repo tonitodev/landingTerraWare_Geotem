@@ -29,10 +29,38 @@ boxStyles()
 	h1, h2, h3, p
 		text-align: center
 		color: $baseWhite
+		line-height: 150%
 	
 	.mainParagraph
 		margin-top: 15px
 		font-weight: 275
 
 	.mainBanner--description
-		margin 50px 10px
+		margin: 50px 10px
+
+.servicesList
+
+	margin-bottom: 80px
+
+	h1
+		text-align: center
+		margin: 50px 25px
+	ul
+		list-style: none
+		li
+			margin-left: 7.5%
+			margin-bottom: 30px
+			a
+				font-size: 1.4rem
+				color: $textColor
+				text-decoration: none
+		li:before
+			content: '\276F '
+			font-weight: 700
+			letter-spacing: 15px
+			color: $mainColor
+
+.serviceBox
+
+	boxSizeandPosition()
+	boxStyles()
