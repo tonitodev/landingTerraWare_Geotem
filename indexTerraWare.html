@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>TerraWare</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./styles/stylesTerraWare.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/stylesTerraWare.css" />
+  </head>
+  <body>
     <header>
       <!--   <h1>Aquí va el menú Navegador o título</h1> -->
     </header>
- 
-  <!--   main TerraWareBanner start-->
+
+    <!--   main TerraWareBanner start-->
 
     <main>
+      <article class="mainBanner">
+        <img src="./assets/logos/Logo_TerraWare.png" alt="Logo de TerraWare" />
+        <!-- Logo -->
+        <p class="mainParagraph">de Grupo Geotem</p>
+        <!-- Label -->
 
-        <article class="mainBanner">
+        <h1 class="mainBanner--description">
+          Exploración Geofísica incorporada a la industria 4.0
+        </h1>
+        <!-- Company description -->
 
-            <img src="./assets/logos/Logo_TerraWare.png" alt="Logo de TerraWare"> <!-- Logo -->
-            <p class="mainParagraph">de Grupo Geotem</p> <!-- Label -->
+        <button
+          class="mainBanner--servicesButton"
+          onclick="window.location.href='#terraWareServices'"
+        >
+          Nuestros Servicios
+        </button>
+      </article>
 
-            <h1 class="mainBanner--description">Exploración Geofísica incorporada a la industria 4.0</h1> <!-- Company description -->
+      <article id="terraWareServices" class="servicesList">
+        <!-- a list of company's services -->
+        <h1>Tecnología y Software</h1>
+        <ul>
+          <li>
+            <span class="bulletIcon"></span
+            ><a href="#servicio1">Desarrollo de software Geofísico</a>
+          </li>
+          <li>
+            <span class="bulletIcon"></span
+            ><a href="#servicio1"
+              >Consultoría Geo-Ingeniería, matemática y computacional</a
+            >
+          </li>
+          <li>
+            <span class="bulletIcon"></span
+            ><a href="#servicio1">TI aplicada a la exploración geofísica</a>
+          </li>
+          <li>
+            <span class="bulletIcon"></span
+            ><a href="#servicio1"
+              >Incorporación de tecnología 4.0 en geociencias</a
+            >
+          </li>
+        </ul>
+      </article>
 
-            <button class="mainBanner--servicesButton" onclick="window.location.href='#terraWareServices'">Nuestros Servicios</button>
+      <article class="serviceBox">
 
-        </article>
+        <!-- Company's service's name  -->
+        <h1>Desarrollamos software geofísico</h1>
+        
+        <!-- Company's service's light description  -->
+        <p class="mainParagraph">A la medida, robusto, escalable y moderno</p>
+        
+        <!-- Company's service's picture/illustration/art  -->
+        <picture class="serviceBox--serviceImageContainer">
+          <source class="standarImageResponsive" srcset="./assets/images/testImageToMaq.avif" />
+          <source class="standarImageResponsive" srcset="/assets/images/testImageToMaq.webp" />
+          <img class="standarImageResponsive" src="" alt="" />
+        </picture>
 
-        <article id="terraWareServices" class="servicesList">
-            <h1>Tecnología y Software</h1>
-            <ul>
-                <li><span class="bulletIcon"></span><a href="#servicio1">Desarrollo de software Geofísico</a></li>
-                <li><span class="bulletIcon"></span><a href="#servicio1">Consultoría Geo-Ingeniería, matemática y computacional</a></li>
-                <li><span class="bulletIcon"></span><a href="#servicio1">TI aplicada a la exploración geofísica</a></li>
-                <li><span class="bulletIcon"></span><a href="#servicio1">Incorporación de tecnología 4.0 en geociencias</a></li>
-            </ul>
-        </article>
+        <!-- Company's service's detailed description  -->
+        <p class="secondaryParagraph">
+          Con más de 15 años de experiencia en la exploración geofísica,
+          ofrecemos soluciones basadas en software para resolución de problemas
+          en temas relacionados con el procesamiento, modelado, inversión,
+          interpretación y despliegue de datos multimetodología.
+        </p>
+      </article>
 
-        <article class="serviceBox">
 
-            <img src="./assets/logos/Logo_TerraWare.png" alt="Logo de TerraWare"> <!-- Logo -->
-            <p class="mainParagraph">de Grupo Geotem</p> <!-- Label -->
-
-            <h1 class="mainBanner--description">Exploración Geofísica incorporada a la industria 4.0</h1> <!-- Company description -->
-
-            <button class="mainBanner--servicesButton" onclick="window.location.href='#terraWareServices'">Nuestros Servicios</button>
-
-        </article>
 
     </main>
 
-
- <article  class="mainBanner">
-        <h1 class="texto1">TerraWare</h1>
-        <h2 class="texto2">Aquí van los servicios de la empresa</h2>
-        <h3 class="texto3">Esta es otra prueba</h3>
+    <article class="secondBanner">
+      -->
+      <p>Hola esta es otra caja</p>
     </article>
-    <article class="secondBanner"> -->
-        <p>Hola esta es otra caja</p>
-    </article>
-</body>
+  </body>
 </html>

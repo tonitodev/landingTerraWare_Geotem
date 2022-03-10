@@ -1,15 +1,42 @@
+/* main styles used on each landing's box */
+
 boxSizeandPosition()
 	width: 90%
 	height: auto
 	min-height: 275px
 	margin: 15px auto
 	margin-bottom: 80px
-	padding: 50px 0
+	padding: 50px 20px
 
 boxStyles()
-	border-radius: 12px
-	box-shadow: 9px 9px 22px rgba(4, 33, 41, 0.25)
 
+	border-radius: 12px
+	box-shadow: 12px 12px 24px rgba(4, 33, 41, 0.15)
+
+/* Main Styles used in box's elements */ 
+
+boxDisplayElements()
+	display: flex
+	flex-direction: column
+
+imageSizeandPosition()
+	width: 100%
+	height: auto
+	max-height: 230px
+
+	align-self: center
+	margin: 50px auto
+
+	.standarImageResponsive
+		width: 100%
+		height: auto
+		max-height: 230px
+		object-fit: cover
+		object-position: center
+
+
+
+/* Styles focused on a specific classes of each project */
 
 .mainBanner
 	
@@ -44,7 +71,7 @@ boxStyles()
 
 	h1
 		text-align: center
-		margin: 50px 25px
+		margin: 50px auto
 	ul
 		list-style: none
 		li
@@ -64,3 +91,17 @@ boxStyles()
 
 	boxSizeandPosition()
 	boxStyles()
+	boxDisplayElements()
+
+	h1, p
+		text-align: center
+
+	.mainParagraph
+		margin-top: 30px
+
+	.serviceBox--serviceImageContainer
+		
+		imageSizeandPosition()
+
+	.secondaryParagraph
+		margin-top: 0px
