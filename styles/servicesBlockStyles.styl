@@ -9,8 +9,8 @@ boxSizeandPosition()
 	padding: 50px 20px
 
 boxStyles()
-
-	border-radius: 12px
+	background-color: $secondaryWhite
+	border-radius: 8px
 	box-shadow: 12px 12px 24px rgba(4, 33, 41, 0.15)
 
 /* Main Styles used in box's elements */ 
@@ -93,7 +93,7 @@ imageSizeandPosition()
 	boxStyles()
 	boxDisplayElements()
 
-	h1, p
+	h1, .mainParagraph
 		text-align: center
 
 	.mainParagraph
@@ -105,4 +105,17 @@ imageSizeandPosition()
 
 	.secondaryParagraph
 		margin-top: 0px
+		text-align: left
+
+.finalBox
+	boxSizeandPosition()
+	padding-top: 0px
+
+	h1, .mainParagraph
+		text-align: center
+
+	.mainParagraph
+		margin: 30px auto
+
+	.secondaryParagraph
 		text-align: left

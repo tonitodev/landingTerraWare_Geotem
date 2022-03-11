@@ -7,13 +7,18 @@ buttonAlignment()
 
 buttonStyles_shapeSize()
 	width: 250px
-	height: 50px
+	height: 40px
 	border-radius: 8px
 
 mainActionButtonColors()
 	border: none
 	background-color: $mainColor
 	color: $baseWhite
+
+secondaryButtonColors()
+	border: solid 2px $complementColor
+	background-color: none
+	color: $complementColor
 
 contactButtonColors()
 	border: none
@@ -28,7 +33,7 @@ contactButtonColors()
 	buttonStyles_shapeSize()
 	mainActionButtonColors()
 
-.serviceBox--contactButton
+.serviceBox--contactButton, .finalBox--contactButton
 
 	buttonAlignment()
 	buttonStyles_shapeSize()
@@ -36,4 +41,14 @@ contactButtonColors()
 
 	margin-top: 50px
 
+.finalBox
+	p
+		margin-top: 50px
 
+	.finalBox--returnButton
+
+		buttonAlignment()
+		buttonStyles_shapeSize()
+		secondaryButtonColors()
+
+		margin-top: 30px
