@@ -1,0 +1,69 @@
+contactFooterStyle()
+	background-color: $mainGray
+socialNetworkStyles()
+	
+	display: flex
+	flex-direction: row
+	justify-content: space-evenly
+	
+	padding: 30px 0
+	background-color: $darkBackground
+
+	.--socialNetworkIcon
+		width: 18px
+		height: 18px
+
+		object-fit: cover
+		object-position: center
+
+rightsCompanyStyles()
+
+	background-color: $darkBackground
+	padding: 0 10%
+	padding-bottom: 30px
+
+
+.globalFooter
+	contactFooterStyle()
+
+	padding-top: 50px
+
+
+
+.footerContactInfo
+
+	border: 4px solid #000
+	display: grid
+	gap: 50px
+	padding: 0 20px
+
+	div
+		border: 4px solid red
+	a
+		color: $textColor
+        
+    .--contactInfo
+		display: flex
+		flex-direction: column
+
+		.__mailCompany
+			margin-bottom: 15px
+			font-weight: 600
+		
+	.--secondNavMenu
+		ul
+			list-style: none
+
+.footerSocialNetworks
+
+	socialNetworkStyles()
+		
+	margin-top: 50px
+		
+	a
+		line-height: 100%
+
+.footerCompanyRights
+	rightsCompanyStyles()
+	p
+		color: $baseWhite
