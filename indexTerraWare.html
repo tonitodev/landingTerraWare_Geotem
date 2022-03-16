@@ -15,51 +15,48 @@
     />
 
     <link rel="stylesheet" href="./styles/stylesTerraWare.css" />
-    <link rel="stylesheet" href="./styles/stylesTerraWareTablet.css" media="(min-width: 720px)">
+    <link
+      rel="stylesheet"
+      href="./styles/stylesTerraWareTablet.css"
+      media="(min-width: 720px)"
+    />
   </head>
 
-
   <body>
-
-    <header> <!-- Main Banner , logo, main description and tags -->
+    <header>
+      <!-- Main Banner , logo, main description and tags -->
       <!--   <h1>Aquí va el menú Navegador o título</h1> -->
       <article class="mainBanner">
-
-        <div class="mainBanner--companyLogoContainer"> 
-
-          <img src="./assets/logos/Logo_TerraWare.png" alt="Logo de TerraWare" />
+        <div class="mainBanner--companyLogoContainer">
+          <img
+            src="./assets/logos/Logo_TerraWare.png"
+            alt="Logo de TerraWare"
+          />
           <!-- Logo -->
           <p class="mainParagraph">de Grupo Geotem</p>
           <!-- Label -->
-
         </div>
 
-
         <div class="mainBanner--descriptionAndButtonContainer">
-
           <h1 class="mainBanner--description">
-          Exploración Geofísica incorporada a la industria 4.0
+            Exploración Geofísica incorporada a la industria 4.0
           </h1>
           <!-- Company description -->
 
           <button
             class="mainBanner--servicesButton"
-            onclick="window.location.href='#terraWareServices'">
+            onclick="window.location.href='#terraWareServices'"
+          >
             Nuestros Servicios
           </button>
-
         </div>
-
-        
       </article>
-
     </header>
 
     <!-------------   main TerraWare --------------->
 
     <main>
       <!-------------   main TerraWareBanner --------------->
-
 
       <!--------------- a list of company's services --------------->
 
@@ -97,13 +94,45 @@
         <!-- Company's service's name  -->
         <h1>Desarrollamos software geofísico</h1>
 
+        <div class="serviceBox--serviceDescription">
+
+          <p class="mainParagraph">
+            Software a la medida, robusto, escalable y moderno
+          </p>
+  
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              class="standarImageResponsive"
+              srcset="./assets/images/testImageToMaq.avif"
+              type="image/avif"
+            />
+            <source
+              class="standarImageResponsive"
+              srcset="/assets/images/testImageToMaq.webp"
+              type="image/webp"
+            />
+            <img class="standarImageResponsive" src="" alt="" />
+          </picture>
+  
+          <!-- Company's service's detailed description  -->
+          <p class="secondaryParagraph">
+            Con más de 15 años de experiencia en la exploración geofísica,
+            ofrecemos soluciones basadas en software para resolución de problemas
+            en temas relacionados con el
+            <b
+              >procesamiento, modelado, inversión, interpretación y despliegue de
+              datos multimetodología.</b
+            >
+          </p>
+
+        </div>
+
         <!-- Company's service's light description  -->
-        <p class="mainParagraph">
-          Software a la medida, robusto, escalable y moderno
-        </p>
 
-        <!-- Company's service's picture/illustration/art  -->
-        <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
           <source
             class="standarImageResponsive"
             srcset="./assets/images/testImageToMaq.avif"
@@ -116,32 +145,6 @@
           />
           <img class="standarImageResponsive" src="" alt="" />
         </picture>
-
-        <!-- Company's service's detailed description  -->
-        <p class="secondaryParagraph">
-          Con más de 15 años de experiencia en la exploración geofísica,
-          ofrecemos soluciones basadas en software para resolución de problemas
-          en temas relacionados con el
-          <b
-            >procesamiento, modelado, inversión, interpretación y despliegue de
-            datos multimetodología.</b
-          >
-        </p>
-
-        <picture class="serviceBox--serviceImageContainer __tabletDesktopDisplay">
-          <source
-            class="standarImageResponsive"
-            srcset="./assets/images/testImageToMaq.avif"
-            type="image/avif"
-          />
-          <source
-            class="standarImageResponsive"
-            srcset="/assets/images/testImageToMaq.webp"
-            type="image/webp"
-          />
-          <img class="standarImageResponsive" src="" alt="" />
-        </picture>
-
       </article>
 
       <article class="serviceBox" id="service2">
@@ -151,35 +154,38 @@
         <h1>Consultoría geo-ingeniería</h1>
 
         <!-- Company's service's light description  -->
-        <p class="mainParagraph">Modelado matemático y computacional</p>
 
-        <!-- Company's service's picture/illustration/art  -->
-        <picture class="serviceBox--serviceImageContainer __mobileDisplay">
-          <source
-            class="standarImageResponsive"
-            srcset="./assets/images/testImageToMaq.avif"
-            type="image/avif"
-          />
-          <source
-            class="standarImageResponsive"
-            srcset="/assets/images/testImageToMaq.webp"
-            type="image/webp"
-          />
-          <img class="standarImageResponsive" src="" alt="" />
-        </picture>
+        <div class="serviceBox--serviceDescription">
+          <p class="mainParagraph">Modelado matemático y computacional</p>
 
-        <!-- Company's service's detailed description  -->
-        <p class="secondaryParagraph">
-          <b
-            >Desarrollamos modelos matemáticos y computacionales para optimizar
-            procesos,</b
-          >mediante esquemas y aproximaciones modernas para interpretar
-          múltiples datos geo científicos.
-        </p>
-        <p class="secondaryParagraph">
-          Resolución y adaptabilidad de problemas complejos con soluciones
-          prácticas fácilmente asimilables.
-        </p>
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              class="standarImageResponsive"
+              srcset="./assets/images/testImageToMaq.avif"
+              type="image/avif"
+            />
+            <source
+              class="standarImageResponsive"
+              srcset="/assets/images/testImageToMaq.webp"
+              type="image/webp"
+            />
+            <img class="standarImageResponsive" src="" alt="" />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="secondaryParagraph">
+            <b
+              >Desarrollamos modelos matemáticos y computacionales para
+              optimizar procesos,</b
+            >mediante esquemas y aproximaciones modernas para interpretar
+            múltiples datos geo científicos.
+          </p>
+          <p class="secondaryParagraph">
+            Resolución y adaptabilidad de problemas complejos con soluciones
+            prácticas fácilmente asimilables.
+          </p>
+        </div>
 
         <!-- contact Button to form -->
         <button
@@ -189,7 +195,9 @@
           Contáctanos
         </button>
 
-        <picture class="serviceBox--serviceImageContainer __tabletDesktopDisplay">
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
           <source
             class="standarImageResponsive"
             srcset="./assets/images/testImageToMaq.avif"
@@ -202,7 +210,6 @@
           />
           <img class="standarImageResponsive" src="" alt="" />
         </picture>
-
       </article>
 
       <article class="serviceBox" id="service3">
@@ -211,7 +218,9 @@
         <!-- Company's service's name  -->
         <h1>TI Aplicada a la exploración geofísica</h1>
 
-        <!-- Company's service's light description  -->
+        <div class="serviceBox--serviceDescription">
+
+           <!-- Company's service's light description  -->
         <p class="mainParagraph">
           Soluciones en hardware para procesamiento complejo de información
         </p>
@@ -241,7 +250,13 @@
           <b>Consultoría y asesoría técnica en equipos, servidores y redes.</b>
         </p>
 
-        <picture class="serviceBox--serviceImageContainer __tabletDesktopDisplay">
+
+        </div>
+
+       
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
           <source
             class="standarImageResponsive"
             srcset="./assets/images/testImageToMaq.avif"
@@ -254,7 +269,6 @@
           />
           <img class="standarImageResponsive" src="" alt="" />
         </picture>
-
       </article>
 
       <article class="serviceBox" id="service4">
@@ -263,7 +277,9 @@
         <!-- Company's service's name  -->
         <h1>Tecnología 4.0 en geociencias</h1>
 
-        <!-- Company's service's light description  -->
+        <div class="serviceBox--serviceDescription">
+
+          <!-- Company's service's light description  -->
         <p class="mainParagraph">IA, Machine Learning y Realidad virtual</p>
 
         <!-- Company's service's picture/illustration/art  -->
@@ -298,6 +314,8 @@
           a partir de diferentes conjuntos de datos.
         </p>
 
+        </div>
+
         <!-- contact Button to form -->
         <button
           class="serviceBox--contactButton"
@@ -306,7 +324,9 @@
           Contáctanos
         </button>
 
-        <picture class="serviceBox--serviceImageContainer __tabletDesktopDisplay">
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
           <source
             class="standarImageResponsive"
             srcset="./assets/images/testImageToMaq.avif"
@@ -332,7 +352,6 @@
           información eficientes para tomar la smejores decisiones.
         </p>
 
-
         <!-- contact & return buttons -->
         <button
           class="finalBox--contactButton"
@@ -351,77 +370,133 @@
     </main>
 
     <footer class="globalFooter">
-
       <article class="footerContactInfo">
-
         <div class="--contactInfo">
-          <a class="secondaryParagraph __mailCompany" href="mailto:info@geotem.com.mx">info@geotem.com.mx</a>
-          <a class="secondaryParagraph __phoneCompany" href="tel:+525554856032">55 5485 6032</a>
-          <a class="secondaryParagraph __phoneCompany" href="tel:+525551610996">55 5161 0996</a>
+          <a
+            class="secondaryParagraph __mailCompany"
+            href="mailto:info@geotem.com.mx"
+            >info@geotem.com.mx</a
+          >
+          <a class="secondaryParagraph __phoneCompany" href="tel:+525554856032"
+            >55 5485 6032</a
+          >
+          <a class="secondaryParagraph __phoneCompany" href="tel:+525551610996"
+            >55 5161 0996</a
+          >
         </div>
 
         <div class="--secondNavMenu">
           <ul>
-            <li><a class="secondaryParagraph" href="https://geotem.lat/Contacto.html" target="_blank">Contáctanos</a></li>
-            <li><a class="secondaryParagraph" href="https://geotem.lat/principal.html">Geotem Ingeniería</a></li>
-            <li><a class="secondaryParagraph" href="https://geotem.lat/principal.html">Omhega Exploraciones</a></li>
-            <li><a class="secondaryParagraph" href="https://geotem.lat/principal.html">TerraWare</a></li>
-            <li><a class="secondaryParagraph" href="https://geotem.lat/principal.html">Geoinnova</a></li>
+            <li>
+              <a
+                class="secondaryParagraph"
+                href="https://geotem.lat/Contacto.html"
+                target="_blank"
+                >Contáctanos</a
+              >
+            </li>
+            <li>
+              <a
+                class="secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Geotem Ingeniería</a
+              >
+            </li>
+            <li>
+              <a
+                class="secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Omhega Exploraciones</a
+              >
+            </li>
+            <li>
+              <a
+                class="secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >TerraWare</a
+              >
+            </li>
+            <li>
+              <a
+                class="secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Geoinnova</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="--pricavyPolicy">
-          <a class="secondaryParagraph" href="https://geotem.lat/Politicas.html" target="_blank">Política de privacidad</a>
+          <a
+            class="secondaryParagraph"
+            href="https://geotem.lat/Politicas.html"
+            target="_blank"
+            >Política de privacidad</a
+          >
         </div>
-
       </article>
 
       <article class="footerSocialNetworks">
-
         <a class="" href="http://" target="_blank">
           <div class="--socialNetworkIcon">
-            <img src="./assets/icons/whatsAppIcon.svg" alt="Cotactanos por whatsApp">
+            <img
+              src="./assets/icons/whatsAppIcon.svg"
+              alt="Cotactanos por whatsApp"
+            />
           </div>
         </a>
 
         <a class="" href="http://" target="_blank">
           <div class="--socialNetworkIcon">
-            <img src="./assets/icons/youTubeIcon.svg" alt="Cotactanos por whatsApp">
+            <img
+              src="./assets/icons/youTubeIcon.svg"
+              alt="Cotactanos por whatsApp"
+            />
           </div>
         </a>
 
         <a class="" href="http://" target="_blank">
           <div class="--socialNetworkIcon">
-            <img src="./assets/icons/LinkedInIcon.svg" alt="Cotactanos por whatsApp">
+            <img
+              src="./assets/icons/LinkedInIcon.svg"
+              alt="Cotactanos por whatsApp"
+            />
           </div>
         </a>
 
         <a class="" href="http://" target="_blank">
           <div class="--socialNetworkIcon">
-            <img src="./assets/icons/twitterIcon.svg" alt="Cotactanos por whatsApp">
+            <img
+              src="./assets/icons/twitterIcon.svg"
+              alt="Cotactanos por whatsApp"
+            />
           </div>
         </a>
 
         <a class="" href="http://" target="_blank">
           <div class="--socialNetworkIcon">
-            <img src="./assets/icons/facebookIcon.svg" alt="Cotactanos por whatsApp">
+            <img
+              src="./assets/icons/facebookIcon.svg"
+              alt="Cotactanos por whatsApp"
+            />
           </div>
         </a>
 
         <a class="" href="http://" target="_blank">
           <div class="--socialNetworkIcon">
-            <img src="./assets/icons/instagramIcon.svg" alt="Cotactanos por whatsApp">
+            <img
+              src="./assets/icons/instagramIcon.svg"
+              alt="Cotactanos por whatsApp"
+            />
           </div>
         </a>
-
       </article>
 
       <article class="footerCompanyRights">
-        <p class="notesParagraph">© 2021 GEOTEM Ingeniería S.A. de C.V. Todos los derechos reservados.</p>
+        <p class="notesParagraph">
+          © 2021 GEOTEM Ingeniería S.A. de C.V. Todos los derechos reservados.
+        </p>
       </article>
-
-
-
     </footer>
   </body>
 </html>
