@@ -15,34 +15,51 @@
     />
 
     <link rel="stylesheet" href="./styles/stylesTerraWare.css" />
+    <link rel="stylesheet" href="./styles/stylesTerraWareTablet.css" media="(min-width: 720px)">
   </head>
+
+
   <body>
-    <header>
+
+    <header> <!-- Main Banner , logo, main description and tags -->
       <!--   <h1>Aquí va el menú Navegador o título</h1> -->
+      <article class="mainBanner">
+
+        <div class="mainBanner--companyLogoContainer"> 
+
+          <img src="./assets/logos/Logo_TerraWare.png" alt="Logo de TerraWare" />
+          <!-- Logo -->
+          <p class="mainParagraph">de Grupo Geotem</p>
+          <!-- Label -->
+
+        </div>
+
+
+        <div class="mainBanner--descriptionAndButtonContainer">
+
+          <h1 class="mainBanner--description">
+          Exploración Geofísica incorporada a la industria 4.0
+          </h1>
+          <!-- Company description -->
+
+          <button
+            class="mainBanner--servicesButton"
+            onclick="window.location.href='#terraWareServices'">
+            Nuestros Servicios
+          </button>
+
+        </div>
+
+        
+      </article>
+
     </header>
 
     <!-------------   main TerraWare --------------->
 
     <main>
       <!-------------   main TerraWareBanner --------------->
-      <article class="mainBanner">
-        <img src="./assets/logos/Logo_TerraWare.png" alt="Logo de TerraWare" />
-        <!-- Logo -->
-        <p class="mainParagraph">de Grupo Geotem</p>
-        <!-- Label -->
 
-        <h1 class="mainBanner--description">
-          Exploración Geofísica incorporada a la industria 4.0
-        </h1>
-        <!-- Company description -->
-
-        <button
-          class="mainBanner--servicesButton"
-          onclick="window.location.href='#terraWareServices'"
-        >
-          Nuestros Servicios
-        </button>
-      </article>
 
       <!--------------- a list of company's services --------------->
 
