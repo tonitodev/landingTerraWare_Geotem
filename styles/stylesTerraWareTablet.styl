@@ -1,3 +1,5 @@
+@import "./mainStyles.styl"
+
 /* for titulo in 1 2 3
 	h{titulo}
 		font-size: 4.8rem - (1.2 * titulo) */
@@ -40,6 +42,7 @@
 
 	h1
 		grid-area: title
+		font-size: 3.6rem
 	.mainParagraph
 		grid-area: subtitle
 		padding-bottom: 30px
@@ -51,3 +54,33 @@
 		grid-area: picture
 	.serviceBox--serviceImageContainer
 		margin: 0
+
+.finalBox
+	padding: 0 30px	
+	
+	h1
+		font-size: 3.6rem
+	
+	.finalBox--Buttons
+		button
+			margin-top: 50px
+
+		display: flex
+		justify-content: space-between
+
+.footerContactInfo
+	display: flex
+	justify-content: space-around
+	padding-bottom: 50px
+
+.lowerFooter
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: $darkBackground
+
+	.footerSocialNetworks
+		width: 50%
+		margin-top: 0
+	.footerCompanyRights
+		padding: 30px 5%
