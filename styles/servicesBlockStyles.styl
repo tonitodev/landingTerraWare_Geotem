@@ -2,10 +2,11 @@
 
 boxSizeandPosition()
 	width: 90%
+	max-width: 1200px
 	height: auto
 	min-height: 275px
 	margin: 15px auto
-	margin-bottom: 80px
+	margin-bottom: 5rem
 	padding: 50px 20px
 
 boxStyles()
@@ -47,9 +48,14 @@ imageSizeandPosition()
 	background-position: center
 	background-size: cover
 	background-repeat: none
+
+	picture
+			display: block
+			margin: 0 auto
 	
 	img
-		width: 240px
+		width: 100%
+		max-width: 250px
 		display: block
 		margin: 0 auto
 
@@ -63,7 +69,12 @@ imageSizeandPosition()
 		font-weight: 275
 
 	.mainBanner--description
+		width: auto
 		margin: 50px 10px
+
+	.mainBanner--descriptionAndButtonContainer
+		.servicesList__desktopDisplay
+			display: none
 
 .servicesList
 

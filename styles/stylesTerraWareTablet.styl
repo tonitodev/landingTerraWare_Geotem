@@ -16,11 +16,11 @@
 	background-repeat: none
 
 	.mainBanner--companyLogoContainer
+		width: 45%
 		min-width: 300px
 
 	.mainBanner--description
 		margin-top: 0px
-
 		max-width: 320px
 
 .servicesList
@@ -38,7 +38,8 @@
 	grid-template-columns: 50%
 	grid-template-rows: auto auto auto auto
 	grid-template-areas: "title title" "subtitle picture" "information picture" "actionButton picture"
-	border: 5px solid red
+	column-gap: 50px
+	/* border: 5px solid red */
 
 	h1
 		grid-area: title
@@ -46,7 +47,7 @@
 	.--mainParagraph
 		grid-area: subtitle
 		padding-bottom: 30px
-	.serviceBox--serviceDescription
+	.--secondaryParagraph
 		grid-area: information
 	.serviceBox--contactButton
 		grid-area: actionButton

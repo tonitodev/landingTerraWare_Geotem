@@ -1,0 +1,40 @@
+@import "./mainStyles.styl"
+
+for titulo in 1 2 3
+	h{titulo}
+		font-size: 4.2rem - (1.2 * titulo)
+
+.mainBanner
+	.mainBanner--descriptionAndButtonContainer
+		.mainBanner--description
+			max-width: 400px
+		.servicesList__desktopDisplay
+			display: block
+			.servicesList
+				margin-bottom: 0
+			ul
+				column-count: 1
+				margin: 0
+				li
+					margin-bottom: 20px
+					a
+						color: $baseWhite
+		button
+			display: none
+	img	
+		max-width: 350px
+
+main
+	.servicesList
+		display: none
+	.serviceBox
+		min-height: 450px
+		padding: 50px
+		grid-template-areas:
+        "title picture" "subtitle picture" "information picture" "actionButton picture"
+		column-gap: 50px
+	#service2, #service4
+		grid-template-areas:
+        "picture title" "picture subtitle" "picture information" "picture actionButton"
+	.finalBox
+		padding: 0 15%

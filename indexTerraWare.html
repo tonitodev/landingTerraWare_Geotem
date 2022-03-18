@@ -20,6 +20,11 @@
       href="./styles/stylesTerraWareTablet.css"
       media="(min-width: 720px)"
     />
+    <link
+    rel="stylesheet"
+    href="./styles/stylesTerraWareDesktop.css"
+    media="(min-width: 1000px)"
+  />
   </head>
 
   <body>
@@ -28,10 +33,13 @@
       <!--   <h1>Aquí va el menú Navegador o título</h1> -->
       <article class="mainBanner">
         <div class="mainBanner--companyLogoContainer">
-          <img
+          <picture >
+            <img
             src="./assets/logos/Logo_TerraWare.png"
             alt="Logo de TerraWare"
           />
+          </picture>
+          
           <!-- Logo -->
           <p class="--mainParagraph">de Grupo Geotem</p>
           <!-- Label -->
@@ -42,6 +50,35 @@
             Exploración Geofísica incorporada a la industria 4.0
           </h1>
           <!-- Company description -->
+
+          <div class="servicesList__desktopDisplay">
+
+            <article id="terraWareServices" class="servicesList">
+              <ul>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service1">Desarrollo de software Geofísico</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service2"
+                    >Consultoría Geo-Ingeniería, matemática y computacional</a
+                  >
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service3">TI aplicada a la exploración geofísica</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service4"
+                    >Incorporación de tecnología 4.0 en geociencias</a
+                  >
+                </li>
+              </ul>
+            </article>
+
+          </div>
 
           <button
             class="mainBanner--servicesButton"
@@ -94,11 +131,11 @@
         <!-- Company's service's name  -->
         <h1>Desarrollamos software geofísico</h1>
 
-        <div class="serviceBox--serviceDescription">
-
-          <p class="--mainParagraph">
+          <h2 class="--mainParagraph">
             Software a la medida, robusto, escalable y moderno
-          </p>
+          </h2>
+
+        <div class="serviceBox--serviceDescription">
   
           <!-- Company's service's picture/illustration/art  -->
           <picture class="serviceBox--serviceImageContainer __mobileDisplay">
@@ -155,9 +192,9 @@
 
         <!-- Company's service's light description  -->
 
-        <div class="serviceBox--serviceDescription">
-          <p class="--mainParagraph">Modelado matemático y computacional</p>
-
+          <h2 class="--mainParagraph">Modelado matemático y computacional</h2>
+          
+          <div class="serviceBox--serviceDescription">
           <!-- Company's service's picture/illustration/art  -->
           <picture class="serviceBox--serviceImageContainer __mobileDisplay">
             <source
@@ -218,14 +255,14 @@
         <!-- Company's service's name  -->
         <h1>TI Aplicada a la exploración geofísica</h1>
 
+           <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">
+          Soluciones en hardware para procesamiento complejo de información
+        </h2>
+
+                <!-- Company's service's picture/illustration/art  -->
         <div class="serviceBox--serviceDescription">
 
-           <!-- Company's service's light description  -->
-        <p class="--mainParagraph">
-          Soluciones en hardware para procesamiento complejo de información
-        </p>
-
-        <!-- Company's service's picture/illustration/art  -->
         <picture class="serviceBox--serviceImageContainer __mobileDisplay">
           <source
             class="--standarImageResponsive"
@@ -277,10 +314,10 @@
         <!-- Company's service's name  -->
         <h1>Tecnología 4.0 en geociencias</h1>
 
-        <div class="serviceBox--serviceDescription">
-
           <!-- Company's service's light description  -->
-        <p class="--mainParagraph">IA, Machine Learning y Realidad virtual</p>
+        <h2 class="--mainParagraph">IA, Machine Learning y Realidad virtual</h2>
+
+        <div class="serviceBox--serviceDescription">
 
         <!-- Company's service's picture/illustration/art  -->
         <picture class="serviceBox--serviceImageContainer __mobileDisplay">
