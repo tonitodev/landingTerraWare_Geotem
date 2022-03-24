@@ -5,6 +5,10 @@ for titulo in 1 2 3
 		font-size: 4.2rem - (1.2 * titulo)
 
 .mainBanner
+	
+	height: 50vh
+	min-height: 500px
+
 	.mainBanner--descriptionAndButtonContainer
 		.mainBanner--description
 			max-width: 400px
@@ -22,9 +26,12 @@ for titulo in 1 2 3
 		button
 			display: none
 	img	
-		max-width: 350px
+		width: 85%
+		max-width: 500px
 
 main
+	h1
+		height: auto
 	.servicesList__desktopDisplay
 		.servicesList
 			display: block
@@ -33,11 +40,21 @@ main
 	.serviceBox
 		min-height: 450px
 		padding: 50px
+		margin-bottom: 0
+
 		grid-template-areas:
-        "title picture" "subtitle picture" "information picture" "actionButton picture"
+        "title picture" "subtitle picture" "information picture" "information picture" "actionButton picture"
 		column-gap: 50px
+
+		background-color: initial
+		box-shadow: initial
+
+		.--standarImageResponsive
+			box-shadow: 12px 12px 24px rgba(4, 33, 41, 0.15)
+
 	#service2, #service4
 		grid-template-areas:
-        "picture title" "picture subtitle" "picture information" "picture actionButton"
+        "picture title" "picture subtitle" "picture information" "picture information" "picture actionButton"
 	.finalBox
 		padding: 0 15%
+		padding-top: 30px
