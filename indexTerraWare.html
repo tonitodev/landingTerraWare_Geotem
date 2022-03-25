@@ -21,19 +21,15 @@
       media="(min-width: 720px)"
     />
     <link
-    rel="stylesheet"
-    href="./styles-TerraWare/stylesTerraWareDesktop.css"
-    media="(min-width: 1000px)"
-  />
+      rel="stylesheet"
+      href="./styles-TerraWare/stylesTerraWareDesktop.css"
+      media="(min-width: 1000px)"
+    />
   </head>
 
   <body>
     <header>
-
       <!--   <h1>Aquí va el menú Navegador o título</h1> -->
-
-      
-
     </header>
 
     <!-------------   main TerraWare --------------->
@@ -45,13 +41,23 @@
 
       <article class="mainBanner">
         <div class="mainBanner--companyLogoContainer">
-          <picture >
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="./assets-TerraWare/logos/Logo_TerraWare_Desktop.png"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 720px)"
+              srcset="./assets-TerraWare/logos/Logo_TerraWare_Tablet.png"
+              type="image/png"
+            />
             <img
-            src="./assets-TerraWare/logos/Logo_TerraWare.png"
-            alt="Logo de TerraWare"
-          />
+              src="./assets-TerraWare/logos/Logo_TerraWare.png"
+              alt="Logo de TerraWare"
+            />
           </picture>
-          
+
           <!-- Logo -->
           <p class="--mainParagraph">de Grupo Geotem</p>
           <!-- Label -->
@@ -64,7 +70,6 @@
           <!-- Company description -->
 
           <div class="servicesList__desktopDisplay">
-
             <article id="terraWareServices" class="servicesList">
               <ul>
                 <li>
@@ -79,7 +84,9 @@
                 </li>
                 <li>
                   <span class="__bulletIcon"></span
-                  ><a href="#service3">TI aplicada a la exploración geofísica</a>
+                  ><a href="#service3"
+                    >TI aplicada a la exploración geofísica</a
+                  >
                 </li>
                 <li>
                   <span class="__bulletIcon"></span
@@ -89,7 +96,6 @@
                 </li>
               </ul>
             </article>
-
           </div>
 
           <button
@@ -137,38 +143,36 @@
         <!-- Company's service's name  -->
         <h1>Desarrollamos software geofísico</h1>
 
-          <h2 class="--mainParagraph">
-            Software a la medida, robusto, escalable y moderno
-          </h2>
+        <h2 class="--mainParagraph">
+          Software a la medida, robusto, escalable y moderno
+        </h2>
 
         <div class="serviceBox--serviceDescription">
-  
           <!-- Company's service's picture/illustration/art  -->
           <picture class="serviceBox--serviceImageContainer __mobileDisplay">
             <source
+              media="min-weight: 300px"
               class="--standarImageResponsive"
-              srcset="./assets-TerraWare/images/TerraWare.jpg"
-              type="image/jpg"
+              srcset="./assets-TerraWare/images/WEBPImages/SoftwareGeofisicoEspecializado_MovilyTablet.webp"
+              type="image/webp"
             />
-            <source
-              class="--standarImageResponsive"
-              srcset="./assets-TerraWare/images/TerraWare.jpg"
-              type="image/jpg"
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets-TerraWare/images/PNGimages/SoftwareGeofisicoEspecializado_MovilyTablet.png"
+              alt="Software geofísico especializado"
             />
-            <img class="--standarImageResponsive" src="./assets-TerraWare/images/TerraWare.jpg" alt="" />
           </picture>
-  
+
           <!-- Company's service's detailed description  -->
           <p class="--secondaryParagraph">
             Con más de 15 años de experiencia en la exploración geofísica,
-            ofrecemos soluciones basadas en software para resolución de problemas
-            en temas relacionados con el
+            ofrecemos soluciones basadas en software para resolución de
+            problemas en temas relacionados con el
             <b
-              >procesamiento, modelado, inversión, interpretación y despliegue de
-              datos multimetodología.</b
+              >procesamiento, modelado, inversión, interpretación y despliegue
+              de datos multimetodología.</b
             >
           </p>
-
         </div>
 
         <!-- Company's service's light description  -->
@@ -176,17 +180,17 @@
         <picture
           class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
         >
-        <source
-        class="--standarImageResponsive"
-        srcset="./assets-TerraWare/images/TerraWare.jpg"
-        type="image/jpg"
-      />
-      <source
-        class="--standarImageResponsive"
-        srcset="./assets-TerraWare/images/TerraWare.jpg"
-        type="image/jpg"
-      />
-      <img class="--standarImageResponsive" src="./assets-TerraWare/images/TerraWare.jpg" alt="" />
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/SoftwareGeofisicoEspecializado_Desktop.webp"
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets-TerraWare/images/PNGimages/SoftwareGeofisicoEspecializado_Desktop.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
         </picture>
       </article>
 
@@ -197,22 +201,22 @@
         <h1>Consultoría geo-ingeniería</h1>
         <!-- Company's service's light description  -->
 
-          <h2 class="--mainParagraph">Modelado matemático y computacional</h2>
-          
-          <div class="serviceBox--serviceDescription">
+        <h2 class="--mainParagraph">Modelado matemático y computacional</h2>
+
+        <div class="serviceBox--serviceDescription">
           <!-- Company's service's picture/illustration/art  -->
           <picture class="serviceBox--serviceImageContainer __mobileDisplay">
             <source
-              class="--standarImageResponsive"
-              srcset="./assets-TerraWare/images/testImageToMaq.avif"
-              type="image/avif"
+            media="min-weight: 300px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.webp"
+            type="image/webp"
+          />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets-TerraWare/images/PNGimages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.png"
+              alt=""
             />
-            <source
-              class="--standarImageResponsive"
-              srcset="/assets-TerraWare/images/testImageToMaq.webp"
-              type="image/webp"
-            />
-            <img class="--standarImageResponsive" src="" alt="" />
           </picture>
 
           <!-- Company's service's detailed description  -->
@@ -241,16 +245,16 @@
           class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
         >
           <source
+            media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets-TerraWare/images/testImageToMaq.avif"
-            type="image/avif"
+            srcset="./assets-TerraWare/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_TabletyDesktop.webp"
+            type="image/png"
           />
-          <source
+          <img
             class="--standarImageResponsive"
-            srcset="/assets-TerraWare/images/testImageToMaq.webp"
-            type="image/webp"
+            src="./assets-TerraWare/images/PNGimages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_TabletyDesktop.png"
+            alt="Ilustracion de software geofisico especializado"
           />
-          <img class="--standarImageResponsive" src="" alt="" />
         </picture>
       </article>
 
@@ -260,56 +264,55 @@
         <!-- Company's service's name  -->
         <h1>TI Aplicada a la exploración geofísica</h1>
 
-           <!-- Company's service's light description  -->
+        <!-- Company's service's light description  -->
         <h2 class="--mainParagraph">
           Soluciones en hardware para procesamiento complejo de información
         </h2>
 
-                <!-- Company's service's picture/illustration/art  -->
+        <!-- Company's service's picture/illustration/art  -->
         <div class="serviceBox--serviceDescription">
+            <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+                <source
+                  media="min-weight: 300px"
+                  class="--standarImageResponsive"
+                  srcset="./assets-TerraWare/images/WEBPImages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="--standarImageResponsive __mobileSizeAdjustment"
+                  src="./assets-TerraWare/images/PNGimages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.png"
+                  alt="Software geofísico especializado"
+                />
+              </picture>
 
-        <picture class="serviceBox--serviceImageContainer __mobileDisplay">
-          <source
-            class="--standarImageResponsive"
-            srcset="./assets-TerraWare/images/testImageToMaq.avif"
-            type="image/avif"
-          />
-          <source
-            class="--standarImageResponsive"
-            srcset="/assets-TerraWare/images/testImageToMaq.webp"
-            type="image/webp"
-          />
-          <img class="--standarImageResponsive" src="" alt="" />
-        </picture>
-
-        <!-- Company's service's detailed description  -->
-        <p class="--secondaryParagraph">
-          Soluciones para almacenamiento y procesamiento de información basadas
-          en equipos de cómputo de alto rendimiento que alcanzan niveles óptimos
-          de producción, 100% enfocado al software objetivo a implementar.
-        </p>
-        <p class="--secondaryParagraph">
-          <b>Consultoría y asesoría técnica en equipos, servidores y redes.</b>
-        </p>
-
-
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Soluciones para almacenamiento y procesamiento de información
+            basadas en equipos de cómputo de alto rendimiento que alcanzan
+            niveles óptimos de producción, 100% enfocado al software objetivo a
+            implementar.
+          </p>
+          <p class="--secondaryParagraph">
+            <b
+              >Consultoría y asesoría técnica en equipos, servidores y redes.</b
+            >
+          </p>
         </div>
 
-       
         <picture
           class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
         >
           <source
+            media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets-TerraWare/images/testImageToMaq.avif"
-            type="image/avif"
+            srcset="./assets-TerraWare/images/WEBPImages/TabletDesktop-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp"
+            type="image/png"
           />
-          <source
+          <img
             class="--standarImageResponsive"
-            srcset="/assets-TerraWare/images/testImageToMaq.webp"
-            type="image/webp"
+            src="./assets-TerraWare/images/PNGimages/TabletDesktop-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.png"
+            alt="Ilustracion de software geofisico especializado"
           />
-          <img class="--standarImageResponsive" src="" alt="" />
         </picture>
       </article>
 
@@ -319,43 +322,41 @@
         <!-- Company's service's name  -->
         <h1>Tecnología 4.0 en geociencias</h1>
 
-          <!-- Company's service's light description  -->
+        <!-- Company's service's light description  -->
         <h2 class="--mainParagraph">IA, Machine Learning y Realidad virtual</h2>
 
         <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="./assets-TerraWare/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp"
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets-TerraWare/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
 
-        <!-- Company's service's picture/illustration/art  -->
-        <picture class="serviceBox--serviceImageContainer __mobileDisplay">
-          <source
-            class="--standarImageResponsive"
-            srcset="./assets-TerraWare/images/testImageToMaq.avif"
-            type="image/avif"
-          />
-          <source
-            class="--standarImageResponsive"
-            srcset="/assets-TerraWare/images/testImageToMaq.webp"
-            type="image/webp"
-          />
-          <img class="--standarImageResponsive" src="" alt="" />
-        </picture>
-
-        <!-- Company's service's detailed description  -->
-        <p class="--secondaryParagraph">
-          Incorporamos tecnologías 4.0 para el desarrollo de
-          <b
-            >aplicaciones geocientíficas con herramientas basadas en realidad
-            virtual, aumentada y mixta</b
-          >
-        </p>
-        <p class="--secondaryParagraph">
-          Utilizamos
-          <b
-            >Machine y Deep Learning para desarrollar clasificación y predicción
-            de propiedades geológicas y geofísicas</b
-          >
-          a partir de diferentes conjuntos de datos.
-        </p>
-
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Incorporamos tecnologías 4.0 para el desarrollo de
+            <b
+              >aplicaciones geocientíficas con herramientas basadas en realidad
+              virtual, aumentada y mixta</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            Utilizamos
+            <b
+              >Machine y Deep Learning para desarrollar clasificación y
+              predicción de propiedades geológicas y geofísicas</b
+            >
+            a partir de diferentes conjuntos de datos.
+          </p>
         </div>
 
         <!-- contact Button to form -->
@@ -370,16 +371,16 @@
           class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
         >
           <source
+            media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets-TerraWare/images/testImageToMaq.avif"
-            type="image/avif"
+            srcset="./assets-TerraWare/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp"
+            type="image/png"
           />
-          <source
+          <img
             class="--standarImageResponsive"
-            srcset="/assets-TerraWare/images/testImageToMaq.webp"
-            type="image/webp"
+            src="./assets-TerraWare/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
           />
-          <img class="--standarImageResponsive" src="" alt="" />
         </picture>
       </article>
 
@@ -396,21 +397,19 @@
 
         <!-- contact & return buttons -->
         <div class="finalBox--Buttons">
+          <button
+            class="finalBox--contactButton"
+            onclick="window.location.href='https://geotem.lat/Contacto.html'"
+          >
+            Contáctanos
+          </button>
 
           <button
-          class="finalBox--contactButton"
-          onclick="window.location.href='https://geotem.lat/Contacto.html'"
-        >
-          Contáctanos
-        </button>
-
-        <button
-          class="finalBox--returnButton"
-          onclick="window.location.href='https://geotem.lat/'"
-        >
-          Regresar
-        </button>
-
+            class="finalBox--returnButton"
+            onclick="window.location.href='https://geotem.lat/'"
+          >
+            Regresar
+          </button>
         </div>
       </article>
     </main>
@@ -423,10 +422,14 @@
             href="mailto:info@geotem.com.mx"
             >info@geotem.com.mx</a
           >
-          <a class="--secondaryParagraph __phoneCompany" href="tel:+525554856032"
+          <a
+            class="--secondaryParagraph __phoneCompany"
+            href="tel:+525554856032"
             >55 5485 6032</a
           >
-          <a class="--secondaryParagraph __phoneCompany" href="tel:+525551610996"
+          <a
+            class="--secondaryParagraph __phoneCompany"
+            href="tel:+525551610996"
             >55 5161 0996</a
           >
         </div>
@@ -492,7 +495,7 @@
               />
             </div>
           </a>
-  
+
           <a class="" href="http://" target="_blank">
             <div class="--socialNetworkIcon">
               <img
@@ -501,7 +504,7 @@
               />
             </div>
           </a>
-  
+
           <a class="" href="http://" target="_blank">
             <div class="--socialNetworkIcon">
               <img
@@ -510,7 +513,7 @@
               />
             </div>
           </a>
-  
+
           <a class="" href="http://" target="_blank">
             <div class="--socialNetworkIcon">
               <img
@@ -519,7 +522,7 @@
               />
             </div>
           </a>
-  
+
           <a class="" href="http://" target="_blank">
             <div class="--socialNetworkIcon">
               <img
@@ -528,7 +531,7 @@
               />
             </div>
           </a>
-  
+
           <a class="" href="http://" target="_blank">
             <div class="--socialNetworkIcon">
               <img
@@ -538,14 +541,13 @@
             </div>
           </a>
         </article>
-  
+
         <article class="--footerCompanyRights">
           <p class="--notesParagraph">
             © 2021 GEOTEM Ingeniería S.A. de C.V. Todos los derechos reservados.
           </p>
         </article>
       </div>
-
     </footer>
   </body>
 </html>
