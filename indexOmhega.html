@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Omhega Exploraciones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles-TerraWare/omhegaStyles.css" />
+    <link
+      rel="stylesheet"
+      href="./styles-TerraWare/stylesTerraWareTablet.css"
+      media="(min-width: 720px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles-TerraWare/stylesTerraWareDesktop.css"
+      media="(min-width: 1000px)"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!--   <h1>Aquí va el menú Navegador o título</h1> -->
+        <nav>
+            <ul>
+                <li><a href="https://geotem.lat/">Ir a Geotem</a></li>
+                <li><a href="https://www.geotem.lat/Contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------   main TerraWare --------------->
+
+    <main>
+      <!-------------   main TerraWareBanner --------------->
+
+      <!-- Main Banner , logo, main description and tags -->
+
+      <article class="mainBanner mainBanner--background">
+        <div class="mainBanner--companyLogoContainer">
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="./assets-TerraWare/logos/logoOmhega/logoOmhegaExploraciones_desktop.png"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 720px)"
+              srcset="./assets-TerraWare/logos/logoOmhega/logoOmhegaExploraciones_tablet.png"
+              type="image/png"
+            />
+            <img
+              src="./assets-TerraWare/logos/logoOmhega/logoOmhegaExploraciones.png"
+              alt="Logo de TerraWare"
+            />
+          </picture>
+
+          <!-- Logo -->
+          <p class="--mainParagraph">de Grupo Geotem</p>
+          <!-- Label -->
+        </div>
+
+        <div class="mainBanner--descriptionAndButtonContainer">
+          <h1 class="mainBanner--description">
+            Exploración Geofísica incorporada a la industria 4.0
+          </h1>
+          <!-- Company description -->
+
+          <div class="servicesList__desktopDisplay">
+            <article id="terraWareServices" class="servicesList">
+              <ul>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service1">Desarrollo de software Geofísico</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service2"
+                    >Consultoría Geo-Ingeniería, matemática y computacional</a
+                  >
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service3"
+                    >TI aplicada a la exploración geofísica</a
+                  >
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service4"
+                    >Incorporación de tecnología 4.0 en geociencias</a
+                  >
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <button
+            class="mainBanner--servicesButton"
+            onclick="window.location.href='#terraWareServices'"
+          >
+            Nuestros Servicios
+          </button>
+        </div>
+      </article>
+
+      <!--------------- a list of company's services --------------->
+
+      <article id="terraWareServices" class="servicesList">
+        <h1>Tecnología y Software</h1>
+        <ul>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service1">Desarrollo de software Geofísico</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service2"
+              >Consultoría Geo-Ingeniería, matemática y computacional</a
+            >
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service3">TI aplicada a la exploración geofísica</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service4"
+              >Incorporación de tecnología 4.0 en geociencias</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <!--------------- Company's services detailed Boxes--------------->
+
+      <article class="serviceBox" id="service1">
+        <!-- Service#1 -->
+
+        <!-- Company's service's name  -->
+        <h1>Desarrollamos software geofísico</h1>
+
+        <h2 class="--mainParagraph">
+          Software a la medida, robusto, escalable y moderno
+        </h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="./assets-TerraWare/images/WEBPImages/SoftwareGeofisicoEspecializado_MovilyTablet.webp"
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets-TerraWare/images/PNGimages/SoftwareGeofisicoEspecializado_MovilyTablet.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Con más de 15 años de experiencia en la exploración geofísica,
+            ofrecemos soluciones basadas en software para resolución de
+            problemas en temas relacionados con el
+            <b
+              >procesamiento, modelado, inversión, interpretación y despliegue
+              de datos multimetodología.</b
+            >
+          </p>
+        </div>
+
+        <!-- Company's service's light description  -->
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/SoftwareGeofisicoEspecializado_Desktop.webp"
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets-TerraWare/images/PNGimages/SoftwareGeofisicoEspecializado_Desktop.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service2">
+        <!-- Service#2 -->
+
+        <!-- Company's service's name  -->
+        <h1>Consultoría geo-ingeniería</h1>
+        <!-- Company's service's light description  -->
+
+        <h2 class="--mainParagraph">Modelado matemático y computacional</h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+            media="min-weight: 300px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.webp"
+            type="image/webp"
+          />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets-TerraWare/images/PNGimages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.png"
+              alt=""
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            <b
+              >Desarrollamos modelos matemáticos y computacionales para
+              optimizar procesos,</b
+            >mediante esquemas y aproximaciones modernas para interpretar
+            múltiples datos geo científicos.
+          </p>
+          <p class="--secondaryParagraph">
+            Resolución y adaptabilidad de problemas complejos con soluciones
+            prácticas fácilmente asimilables.
+          </p>
+        </div>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_TabletyDesktop.webp"
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets-TerraWare/images/PNGimages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_TabletyDesktop.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service3">
+        <!-- Service#3 -->
+
+        <!-- Company's service's name  -->
+        <h1>TI Aplicada a la exploración geofísica</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">
+          Soluciones en hardware para procesamiento complejo de información
+        </h2>
+
+        <!-- Company's service's picture/illustration/art  -->
+        <div class="serviceBox--serviceDescription">
+            <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+                <source
+                  media="min-weight: 300px"
+                  class="--standarImageResponsive"
+                  srcset="./assets-TerraWare/images/WEBPImages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="--standarImageResponsive __mobileSizeAdjustment"
+                  src="./assets-TerraWare/images/PNGimages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.png"
+                  alt="Software geofísico especializado"
+                />
+              </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Soluciones para almacenamiento y procesamiento de información
+            basadas en equipos de cómputo de alto rendimiento que alcanzan
+            niveles óptimos de producción, 100% enfocado al software objetivo a
+            implementar.
+          </p>
+          <p class="--secondaryParagraph">
+            <b
+              >Consultoría y asesoría técnica en equipos, servidores y redes.</b
+            >
+          </p>
+        </div>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/TabletDesktop-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp"
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets-TerraWare/images/PNGimages/TabletDesktop-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service4">
+        <!-- Service#4 -->
+
+        <!-- Company's service's name  -->
+        <h1>Tecnología 4.0 en geociencias</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">IA, Machine Learning y Realidad virtual</h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="./assets-TerraWare/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp"
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets-TerraWare/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Incorporamos tecnologías 4.0 para el desarrollo de
+            <b
+              >aplicaciones geocientíficas con herramientas basadas en realidad
+              virtual, aumentada y mixta</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            Utilizamos
+            <b
+              >Machine y Deep Learning para desarrollar clasificación y
+              predicción de propiedades geológicas y geofísicas</b
+            >
+            a partir de diferentes conjuntos de datos.
+          </p>
+        </div>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="./assets-TerraWare/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp"
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets-TerraWare/images/PNGimages/TabletDesktop_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="finalBox">
+        <!-- finalBox -->
+
+        <!-- publicityPhrase  -->
+        <h1>Una forma distinta de hacer geofísica</h1>
+
+        <p class="--secondaryParagraph">
+          Nos enfocamos en la innovación tecnológica para desarrollar análsis de
+          información eficientes para tomar la smejores decisiones.
+        </p>
+
+        <!-- contact & return buttons -->
+        <div class="finalBox--Buttons">
+          <button
+            class="finalBox--contactButton"
+            onclick="window.location.href='https://geotem.lat/Contacto.html'"
+          >
+            Contáctanos
+          </button>
+
+          <button
+            class="finalBox--returnButton"
+            onclick="window.location.href='https://geotem.lat/'"
+          >
+            Regresar
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="--globalFooter">
+      <article class="--footerContactInfo">
+        <div class="--contactInfo">
+          <a
+            class="--secondaryParagraph __mailCompany"
+            href="mailto:info@geotem.com.mx"
+            >info@geotem.com.mx</a
+          >
+          <a
+            class="--secondaryParagraph __phoneCompany"
+            href="tel:+525554856032"
+            >55 5485 6032</a
+          >
+          <a
+            class="--secondaryParagraph __phoneCompany"
+            href="tel:+525551610996"
+            >55 5161 0996</a
+          >
+        </div>
+
+        <div class="--secondNavMenu">
+          <ul>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/Contacto.html"
+                target="_blank"
+                >Contáctanos</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Geotem Ingeniería</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Omhega Exploraciones</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >TerraWare</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Geoinnova</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="--pricavyPolicy">
+          <a
+            class="--secondaryParagraph"
+            href="https://geotem.lat/Politicas.html"
+            target="_blank"
+            >Política de privacidad</a
+          >
+        </div>
+      </article>
+
+      <div class="--lowerFooter">
+        <article class="--footerSocialNetworks">
+          <a class="" href="http://" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets-TerraWare/icons/whatsAppIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="http://" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets-TerraWare/icons/youTubeIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="http://" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets-TerraWare/icons/LinkedInIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="http://" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets-TerraWare/icons/twitterIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="http://" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets-TerraWare/icons/facebookIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="http://" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets-TerraWare/icons/instagramIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+        </article>
+
+        <article class="--footerCompanyRights">
+          <p class="--notesParagraph">
+            © 2021 GEOTEM Ingeniería S.A. de C.V. Todos los derechos reservados.
+          </p>
+        </article>
+      </div>
+    </footer>
+  </body>
+</html>
