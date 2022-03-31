@@ -30,12 +30,14 @@
   <body>
     <header>
       <!--   <h1>Aquí va el menú Navegador o título</h1> -->
-        <nav>
-            <ul>
-                <li><a href="https://geotem.lat/">Ir a Geotem</a></li>
-                <li><a href="https://www.geotem.lat/Contacto.html">Contáctanos</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="https://geotem.lat/">Ir a Geotem</a></li>
+          <li>
+            <a href="https://www.geotem.lat/Contacto.html">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-------------   main TerraWare --------------->
@@ -45,34 +47,43 @@
 
       <!-- Main Banner , logo, main description and tags -->
 
-      <article class="mainBanner">
-        <div class="mainBanner--companyLogoContainer">
+      <article class="mainBanner __mainBanner-omhega">
+        <div
+          class="mainBanner--companyLogoContainer __companyLogoContainer-omhega"
+        >
           <picture>
             <source
               media="(min-width: 1000px)"
-              srcset="./assets/logos/logoOmhega/logoOmhegaExploraciones_desktop.png"
+              srcset="
+                ./assets/logos/logoOmhega/logoOmhegaExploraciones_desktop.png
+              "
               type="image/png"
             />
             <source
               media="(min-width: 720px)"
-              srcset="./assets/logos/logoOmhega/logoOmhegaExploraciones_tablet.png"
+              srcset="
+                ./assets/logos/logoOmhega/logoOmhegaExploraciones_tablet.png
+              "
               type="image/png"
             />
             <img
               src="./assets/logos/logoOmhega/logoOmhegaExploraciones.png"
-              alt="Logo de TerraWare"
+              alt="Logo de Omhega Exploraciones"
             />
           </picture>
 
           <!-- Logo -->
-          <p class="--mainParagraph">de Grupo Geotem</p>
+          <p class="--mainParagraph __mainParagraph-omhega">de Grupo Geotem</p>
           <!-- Label -->
         </div>
 
-        <div class="mainBanner--descriptionAndButtonContainer">
-          <h1 class="mainBanner--description">
-            Exploración Geofísica incorporada a la industria 4.0
+        <div
+          class="mainBanner--descriptionAndButtonContainer __descriptionAndButtonContainer-omhega"
+        >
+          <h1 class="mainBanner--description __description-omhega">
+            Omhega Exploraciones
           </h1>
+          <h2>Geohidrología y remediación ambiental</h2>
           <!-- Company description -->
 
           <div class="servicesList__desktopDisplay">
@@ -80,25 +91,35 @@
               <ul>
                 <li>
                   <span class="__bulletIcon"></span
-                  ><a href="#service1">Desarrollo de software Geofísico</a>
+                  ><a href="#service1">Trayectoria</a>
                 </li>
                 <li>
                   <span class="__bulletIcon"></span
                   ><a href="#service2"
-                    >Consultoría Geo-Ingeniería, matemática y computacional</a
+                    >Exploración geohidrológica y medioambiental</a
                   >
                 </li>
                 <li>
                   <span class="__bulletIcon"></span
-                  ><a href="#service3"
-                    >TI aplicada a la exploración geofísica</a
+                  ><a href="#service3">Hidrogeología</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service4">Caracterización Ambiental</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service5"
+                    >Agua subterránea y suelos contaminados</a
                   >
                 </li>
                 <li>
                   <span class="__bulletIcon"></span
-                  ><a href="#service4"
-                    >Incorporación de tecnología 4.0 en geociencias</a
-                  >
+                  ><a href="#service6">Perforación y excavación</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service7">Contáctanos</a>
                 </li>
               </ul>
             </article>
@@ -106,37 +127,45 @@
 
           <button
             class="mainBanner--servicesButton"
-            onclick="window.location.href='#terraWareServices'"
+            onclick="window.location.href='#terraWareServices_Movil'"
           >
-            Nuestros Servicios
+            Conócenos
           </button>
         </div>
       </article>
 
       <!--------------- a list of company's services --------------->
 
-      <article id="terraWareServices" class="servicesList">
-        <h1>Tecnología y Software</h1>
+      <article id="terraWareServices_Movil" class="servicesList">
+        <h1>Acerca de Omhega</h1>
         <ul>
           <li>
             <span class="__bulletIcon"></span
-            ><a href="#service1">Desarrollo de software Geofísico</a>
+            ><a href="#service1">Trayectoria</a>
           </li>
           <li>
             <span class="__bulletIcon"></span
-            ><a href="#service2"
-              >Consultoría Geo-Ingeniería, matemática y computacional</a
-            >
+            ><a href="#service2">Exploración geohidrológica y medioambiental</a>
           </li>
           <li>
             <span class="__bulletIcon"></span
-            ><a href="#service3">TI aplicada a la exploración geofísica</a>
+            ><a href="#service3">Hidrogeología</a>
           </li>
           <li>
             <span class="__bulletIcon"></span
-            ><a href="#service4"
-              >Incorporación de tecnología 4.0 en geociencias</a
-            >
+            ><a href="#service4">Caracterización Ambiental</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service5">Agua subterránea y suelos contaminados</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service6">Perforación y excavación</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service7">Contáctanos</a>
           </li>
         </ul>
       </article>
@@ -147,19 +176,41 @@
         <!-- Service#1 -->
 
         <!-- Company's service's name  -->
-        <h1>Desarrollamos software geofísico</h1>
+        <h1>Trayectoria</h1>
 
-        <h2 class="--mainParagraph">
-          Software a la medida, robusto, escalable y moderno
-        </h2>
+        <h2 class="--mainParagraph">Conoce nuestra historia</h2>
 
-        <div class="serviceBox--serviceDescription">
+        <ul class="--omhega-listStyle">
+          <li class="__numeralia-omhega">
+            <span class="__numberIcon-omhega">+15</span>
+            <p>años de experiencia</p>
+          </li>
+
+          <li class="__numeralia-omhega">
+            <span class="__numberIcon-omhega">+10</span>
+            <p>años realizando proyectos hidrogeológicos</p>
+          </li>
+
+          <li class="__numeralia-omhega">
+            <span class="__numberIcon-omhega">+30</span>
+            <p>Proyectos hidrogeológicos nacionales</p>
+          </li>
+
+          <li class="__numeralia-omhega">
+            <span class="__numberIcon-omhega">+50</span>
+            <p>Proyectos hidrogeológicos internacionacionales</p>
+          </li>
+        </ul>
+
+        <div class="serviceBox--serviceDescription __tabletDesktopDisplay">
           <!-- Company's service's picture/illustration/art  -->
           <picture class="serviceBox--serviceImageContainer __mobileDisplay">
             <source
               media="min-weight: 300px"
               class="--standarImageResponsive"
-              srcset="./assets/images/WEBPImages/SoftwareGeofisicoEspecializado_MovilyTablet.webp"
+              srcset="
+                ./assets/images/WEBPImages/SoftwareGeofisicoEspecializado_MovilyTablet.webp
+              "
               type="image/webp"
             />
             <img
@@ -168,17 +219,6 @@
               alt="Software geofísico especializado"
             />
           </picture>
-
-          <!-- Company's service's detailed description  -->
-          <p class="--secondaryParagraph">
-            Con más de 15 años de experiencia en la exploración geofísica,
-            ofrecemos soluciones basadas en software para resolución de
-            problemas en temas relacionados con el
-            <b
-              >procesamiento, modelado, inversión, interpretación y despliegue
-              de datos multimetodología.</b
-            >
-          </p>
         </div>
 
         <!-- Company's service's light description  -->
@@ -189,7 +229,9 @@
           <source
             media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets/images/WEBPImages/SoftwareGeofisicoEspecializado_Desktop.webp"
+            srcset="
+              ./assets/images/WEBPImages/SoftwareGeofisicoEspecializado_Desktop.webp
+            "
             type="image/png"
           />
           <img
@@ -204,20 +246,22 @@
         <!-- Service#2 -->
 
         <!-- Company's service's name  -->
-        <h1>Consultoría geo-ingeniería</h1>
+        <h1>Exploración geohidrológica y medioambiental</h1>
         <!-- Company's service's light description  -->
 
-        <h2 class="--mainParagraph">Modelado matemático y computacional</h2>
+        <h2 class="--mainParagraph">Geofísica, geología y perforación</h2>
 
         <div class="serviceBox--serviceDescription">
           <!-- Company's service's picture/illustration/art  -->
           <picture class="serviceBox--serviceImageContainer __mobileDisplay">
             <source
-            media="min-weight: 300px"
-            class="--standarImageResponsive"
-            srcset="./assets/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.webp"
-            type="image/webp"
-          />
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.webp
+              "
+              type="image/webp"
+            />
             <img
               class="--standarImageResponsive __mobileSizeAdjustment"
               src="./assets/images/PNGimages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_Movil.png"
@@ -227,15 +271,12 @@
 
           <!-- Company's service's detailed description  -->
           <p class="--secondaryParagraph">
+            Desarrollamos proyectos complejos de exploración del subsuelo
+            aplicando
             <b
-              >Desarrollamos modelos matemáticos y computacionales para
-              optimizar procesos,</b
-            >mediante esquemas y aproximaciones modernas para interpretar
-            múltiples datos geo científicos.
-          </p>
-          <p class="--secondaryParagraph">
-            Resolución y adaptabilidad de problemas complejos con soluciones
-            prácticas fácilmente asimilables.
+              >métodos geofísicos vanguardistas, campañas de exploración
+              exploración geológica y análisis de laboratorios especiaizados.</b
+            >
           </p>
         </div>
 
@@ -253,7 +294,9 @@
           <source
             media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_TabletyDesktop.webp"
+            srcset="
+              ./assets/images/WEBPImages/ConsultoriaGeocienciasIngenieria-MapasdeExploracionGeofisica_TabletyDesktop.webp
+            "
             type="image/png"
           />
           <img
@@ -268,40 +311,44 @@
         <!-- Service#3 -->
 
         <!-- Company's service's name  -->
-        <h1>TI Aplicada a la exploración geofísica</h1>
+        <h1>Hidrogeología</h1>
 
         <!-- Company's service's light description  -->
         <h2 class="--mainParagraph">
-          Soluciones en hardware para procesamiento complejo de información
+          Explotación responsable y exploración sustentable del agua
         </h2>
 
         <!-- Company's service's picture/illustration/art  -->
         <div class="serviceBox--serviceDescription">
-            <picture class="serviceBox--serviceImageContainer __mobileDisplay">
-                <source
-                  media="min-weight: 300px"
-                  class="--standarImageResponsive"
-                  srcset="./assets/images/WEBPImages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp"
-                  type="image/webp"
-                />
-                <img
-                  class="--standarImageResponsive __mobileSizeAdjustment"
-                  src="./assets/images/PNGimages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.png"
-                  alt="Software geofísico especializado"
-                />
-              </picture>
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Movil-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
 
           <!-- Company's service's detailed description  -->
           <p class="--secondaryParagraph">
-            Soluciones para almacenamiento y procesamiento de información
-            basadas en equipos de cómputo de alto rendimiento que alcanzan
-            niveles óptimos de producción, 100% enfocado al software objetivo a
-            implementar.
+            <b
+              >Evaluamos la calidad química y comportamiento subterráneo del
+              flujo para la gestión de acuíferos, mediante la caracterizacion
+              hidrodinámica e hidrogeoquímica de acuíferos, conceptual y
+              numérica.</b
+            >
           </p>
           <p class="--secondaryParagraph">
-            <b
-              >Consultoría y asesoría técnica en equipos, servidores y redes.</b
-            >
+            Desarrollamos estrategias para solucionar problemas geotécnicos
+            asociados con agua subterránea, planeación y emplazamiento de obras
+            hidráulicas.
           </p>
         </div>
 
@@ -311,7 +358,9 @@
           <source
             media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets/images/WEBPImages/TabletDesktop-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop-Modelos-geofisicos-generados-con-tecnologias-de-la-informacion.webp
+            "
             type="image/png"
           />
           <img
@@ -326,6 +375,208 @@
         <!-- Service#4 -->
 
         <!-- Company's service's name  -->
+        <h1>Caracterización ambiental</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">
+          Medimos el impacto ambiental a partir de explorar el subsuelo
+        </h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Implementamos técnología, métodos de exploración geofísica y
+            análisis de laboratorio para
+            <b
+              >caracterizar, modelar, monitorear y mitigar sitios contamiados o
+              con fuentes contaminantes.</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            Colaboramos activamente con empresas aliadas e instituciones
+            académicas.
+          </p>
+        </div>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/TabletDesktop_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service5">
+        <!-- Service#5 -->
+
+        <!-- Company's service's name  -->
+        <h1>Agua subterránea y suelos contaminados</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">Muestreo y caracterización</h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            <b
+              >Realizamos caracterizaciones ambientales de sitios contaminados
+              mediante campañas de muestreo, análisis de laboratorio y pruebas
+              de campo.</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            Todos nuestros procesos se realizan bajo las normas de la SEMARNAT y
+            la SSA en materia de naturaleza de suelos, metales pesados en
+            suelos, hidrocarburos en suelos y agua para uso y consumo humano
+          </p>
+        </div>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/TabletDesktop_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service6">
+        <!-- Service#6 -->
+
+        <!-- Company's service's name  -->
+        <h1>Perforación y excavación</h1>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <ul class="--omhega-listStyle __omhega-listStyle-excavation">
+            <li class="__excavacionItem">
+              <p>Sondeos mixtos del subsuelo</p>
+            </li>
+  
+            <li class="__excavacionItem">
+              <p>Pozos a cielo abierto</p>
+            </li>
+  
+            <li class="__excavacionItem">
+              <p>Test in-situ</p>
+            </li>
+  
+            <li class="__excavacionItem">
+              <p>Recolección y transporte de muestras</p>
+            </li>
+          </ul>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/TabletDesktop_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service7">
+        <!-- Service#4 -->
+
+        <!-- Company's service's name  -->
         <h1>Tecnología 4.0 en geociencias</h1>
 
         <!-- Company's service's light description  -->
@@ -337,7 +588,9 @@
             <source
               media="min-weight: 300px"
               class="--standarImageResponsive"
-              srcset="./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp"
+              srcset="
+                ./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp
+              "
               type="image/webp"
             />
             <img
@@ -379,7 +632,81 @@
           <source
             media="min-weight: 1000px"
             class="--standarImageResponsive"
-            srcset="./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/TabletDesktop_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service8">
+        <!-- Service#4 -->
+
+        <!-- Company's service's name  -->
+        <h1>Tecnología 4.0 en geociencias</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">IA, Machine Learning y Realidad virtual</h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Incorporamos tecnologías 4.0 para el desarrollo de
+            <b
+              >aplicaciones geocientíficas con herramientas basadas en realidad
+              virtual, aumentada y mixta</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            Utilizamos
+            <b
+              >Machine y Deep Learning para desarrollar clasificación y
+              predicción de propiedades geológicas y geofísicas</b
+            >
+            a partir de diferentes conjuntos de datos.
+          </p>
+        </div>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp
+            "
             type="image/png"
           />
           <img
