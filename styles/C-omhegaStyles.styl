@@ -1,8 +1,9 @@
 @import "./A-geotem--mainStyles.styl"
 @import "./A-geotem--buttonStyles.styl"
 
-
 @import "./B-geotemLanding--basicStyles.styl"
+
+@import "./A-geotem--footerStyle.styl"
 
 .__mainBanner-omhega
 	background-image: url('../assets/images/WEBPImages/Omhega_MainBanner_Background.webp'), url('../assets-TerraWare/images/PNGimages/Omhega_MainBanner_Background.png')
@@ -10,8 +11,6 @@
 	background-size: cover
 	background-repeat: none
 
-	@media (min-width: 450px)
-		background-image: url('../assets/images/WEBPImages/Omhega_MainBanner_Background_tabletDesktop.webp'), url('../assets-TerraWare/images/PNGimages/Omhega_MainBanner_Background_tabletDesktop.png')
 
 	.__companyLogoContainer-omhega
 		img
@@ -39,7 +38,7 @@
 		position: relative
 
 		padding: 30px 5% 0 5% 
-		list-style: none
+		list-style: none	
 
 		.__numeralia-omhega
 			display: flex
@@ -79,7 +78,42 @@
 			justify-content: start
 
 	.__omhega-listStyle-excavation
-		padding-top: 0
+		padding-top: 30px
 
+/* Ajustes de estilos omhega para tablets */
 
-@import "./A-geotem--footerStyle.styl"
+@media (min-width: 450px)
+
+	.__mainBanner-omhega
+		background-image: url('../assets/images/WEBPImages/Omhega_MainBanner_Background_tabletDesktop.webp'), url('../assets-TerraWare/images/PNGimages/Omhega_MainBanner_Background_tabletDesktop.png')
+
+	.serviceBox
+		.--omhega-listStyle
+			
+			grid-area: information
+			
+			width: 90%
+			margin: 0 0 0 5%
+			padding: 0
+
+			.__numeralia-omhega
+				
+				justify-content: start
+
+				p
+					min-width: 60%
+					max-width: 160px
+					text-align: start
+
+		.__omhega-listStyle-excavation
+			margin: 0 0 0 10%;
+
+@media (min-width: 1000px)
+	
+	.mainBanner
+		.mainBanner--descriptionAndButtonContainer
+			.servicesList__desktopDisplay
+				#omhegaServices
+					ul
+						column-count: 2
+						color: red
