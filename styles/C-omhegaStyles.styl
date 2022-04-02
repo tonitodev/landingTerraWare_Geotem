@@ -87,6 +87,7 @@
 	.__mainBanner-omhega
 		background-image: url('../assets/images/WEBPImages/Omhega_MainBanner_Background_tabletDesktop.webp'), url('../assets-TerraWare/images/PNGimages/Omhega_MainBanner_Background_tabletDesktop.png')
 
+
 	.serviceBox
 		.--omhega-listStyle
 			
@@ -111,9 +112,19 @@
 @media (min-width: 1000px)
 	
 	.mainBanner
+		.__companyLogoContainer-omhega
+			img
+				max-width: 210px
 		.mainBanner--descriptionAndButtonContainer
+			.mainBanner--description
+				margin: 0px auto 30px auto
 			.servicesList__desktopDisplay
 				#omhegaServices
 					ul
 						column-count: 2
-						color: red
+						li
+							a
+								color: $textColor
+			.mainBanner--servicesButton__desktopDisplay
+				margin-top: 50px
+				display: block
