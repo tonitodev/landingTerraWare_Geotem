@@ -15,8 +15,22 @@ socialNetworkStyles()
 		width: 18px
 		height: 18px
 
-		object-fit: cover
-		object-position: center
+clientNetworkStyles()
+	
+	display: flex
+	flex-direction: row
+	justify-content: space-evenly
+	
+	padding: 30px 0
+
+	.--clientCompanyIcon
+		width: auto
+		
+		img
+			width: auto
+			max-width: 75px
+			height: auto
+
 
 rightsCompanyStyles()
 
@@ -64,3 +78,8 @@ rightsCompanyStyles()
 	rightsCompanyStyles()
 	p
 		color: $baseWhite
+
+.--clientNetwork
+	clientNetworkStyles()
+	align-items: center
+	margin-top: 50px
