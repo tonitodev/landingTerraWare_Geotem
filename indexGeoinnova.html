@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Geoinnova</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/C-geoinnovaStyles.css"/>
+    <link
+      rel="stylesheet"
+      href="./styles/B-geotemLanding_TabletStyles.css"
+      media="(min-width: 720px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/B-geotemLanding_DesktopStyles.css"
+      media="(min-width: 1000px)"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!--   <h1>Aquí va el menú Navegador o título</h1> -->
+      <nav>
+        <ul>
+          <li><a href="https://geotem.lat/">Ir a Geotem</a></li>
+          <li>
+            <a href="https://www.geotem.lat/Contacto.html">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-------------   main TerraWare --------------->
+
+    <main>
+      <!-------------   main TerraWareBanner --------------->
+
+      <!-- Main Banner , logo, main description and tags -->
+
+      <article class="mainBanner __mainBanner-geoinnova">
+        <div
+          class="mainBanner--companyLogoContainer __companyLogoContainer-geoinnova"
+        >
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="./assets/logos/logoGeoinnova/logoGoeinnova_desktop.png"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 720px)"
+              srcset="./assets/logos/logoGeoinnova/logoGoeinnova_tablet.png"
+              type="image/png"
+            />
+            <img
+              src="./assets/logos/logoGeoinnova/logoGoeinnova.png"
+              alt="Logo de Geoinnova Exploraciones"
+            />
+          </picture>
+
+          <!-- Logo -->
+          <p class="--mainParagraph __mainParagraph-geoinnova">de Grupo Geotem</p>
+          <!-- Label -->
+        </div>
+
+        <div
+          class="mainBanner--descriptionAndButtonContainer __descriptionAndButtonContainer-geoinnova"
+        >
+
+          <h1>Exploración y desarrollo de energías limpias</h1>
+          <!-- Company description -->
+
+          <div class="servicesList__desktopDisplay">
+            <article class="servicesList">
+              <ul>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service1">Alianza por el desarrollo de energías limpias</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service2">Experiencia en mercados energéticos </a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service3">Proyectos geotérmicos internacionales</a>
+                </li>
+                <li>
+                  <span class="__bulletIcon"></span
+                  ><a href="#service4">Trayectoria</a>
+                </li>
+      
+              </ul>
+            </article>
+          </div>
+
+          <button
+            class="mainBanner--servicesButton"
+            onclick="window.location.href='#geoinnovaServices_Movil'"
+          >
+            Conócenos
+          </button>
+
+          <button
+            class="mainBanner--servicesButton__desktopDisplay"
+            onclick="window.location.href='#service1'"
+          >
+            Conócenos
+          </button>
+        </div>
+      </article>
+
+      <!--------------- a list of company's services (Mobile display only ++ Desktop and tablet list is displayed on mainBanner) --------------->
+
+      <article id="geoinnovaServices_Movil" class="servicesList">
+        <h1>Impacto y alcances</h1>
+        <ul>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service1">Alianza por el desarrollo de energías limpias</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service2">Experiencia en los mercados energéticos</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service3">Proyectos geotérmicos internacionales</a>
+          </li>
+          <li>
+            <span class="__bulletIcon"></span
+            ><a href="#service4">Trayectoria</a>
+          </li>
+
+        </ul>
+      </article>
+
+      <!--------------- Company's services detailed Boxes--------------->
+
+
+      <article class="serviceBox" id="service1">
+        <!-- Service#2 -->
+
+        <!-- Company's service's name  -->
+        <h1>Alianza corporativa para el desarrollo de energías limpias</h1>
+        <!-- Company's service's light description  -->
+
+        <h2 class="--mainParagraph">Por definir</h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Omhega_movil_exploracion-ambiental-geohidrologica_serviceImage.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Omhega_movil_exploracion-ambiental-geohidrologica_serviceImage.png"
+              alt=""
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            Por definir
+            <b
+              >Por definir</b
+            >
+          </p>
+        </div>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/Omhega_tabletDesktop_exploracion-ambiental-geohidrologica_serviceImage.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/Omhega_tabletDesktop_exploracion-ambiental-geohidrologica_serviceImage.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service2">
+        <!-- Service#3 -->
+
+        <!-- Company's service's name  -->
+        <h1>30 años en el mercado de energías limpias</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">
+          P o r - d e f i n i r
+        </h2>
+
+        <!-- Company's service's picture/illustration/art  -->
+        <div class="serviceBox--serviceDescription">
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Omhega_movil_exploracion-geohidrologica_serviceImage.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Omhega_movil_exploracion-geohidrologica_serviceImage.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            <b
+              >Por definir</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            Por definir
+          </p>
+        </div>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/PNGimages/Omhega_tabletDesktop_exploracion-geohidrologica_serviceImage.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/Omhega_tabletDesktop_exploracion-geohidrologica_serviceImage.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+      <article class="serviceBox" id="service3">
+        <!-- Service#4 -->
+
+        <!-- Company's service's name  -->
+        <h1>Proyectos geotérmicos internacionales</h1>
+
+        <!-- Company's service's light description  -->
+        <h2 class="--mainParagraph">
+          P o r - D e f i n i r
+        </h2>
+
+        <div class="serviceBox--serviceDescription">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Movil_Tecnologia-aplicada-a-geociencias.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Movil_Tecnologia-aplicada-a-geociencias.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+
+          <!-- Company's service's detailed description  -->
+          <p class="--secondaryParagraph">
+            por definir
+            <b
+              >cpor definir</b
+            >
+          </p>
+          <p class="--secondaryParagraph">
+            por definir
+          </p>
+        </div>
+
+        <!-- contact Button to form -->
+        <button
+          class="serviceBox--contactButton"
+          onclick="window.location.href='https://geotem.lat/Contacto.html'"
+        >
+          Contáctanos
+        </button>
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/TabletDesktop_Tecnologia-aplicada-a-geociencias.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/TabletDesktop_Tecnologia-aplicada-a-geociencias.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+
+      <article class="serviceBox" id="service4">
+        <!-- Service#1 -->
+
+        <!-- Company's service's name  -->
+        <h1>Trayectoria</h1>
+
+        <h2 class="--mainParagraph">Conoce nuestra historia</h2>
+
+        <ul class="--geoinnova-listStyle">
+          <li class="__numeralia-geoinnova">
+            <span class="__numberIcon-geoinnova">+30</span>
+            <p>Años en el mercado</p>
+          </li>
+
+          <li class="__numeralia-geoinnova">
+            <span class="__numberIcon-geoinnova">+10</span>
+            <p>Proyectos de energías limpias</p>
+          </li>
+
+          <li class="__numeralia-geoinnova">
+            <span class="__numberIcon-geoinnova">3</span>
+            <p>Centros de trabajo en México</p>
+          </li>
+
+          <li class="__numeralia-geoinnova">
+            <span class="__numberIcon-geoinnova">+15</span>
+            <p>Aliados estratégicos para desarrollo de proyectos</p>
+          </li>
+        </ul>
+
+        <div class="serviceBox--serviceDescription __tabletDesktopDisplay">
+          <!-- Company's service's picture/illustration/art  -->
+          <picture class="serviceBox--serviceImageContainer __mobileDisplay">
+            <source
+              media="min-weight: 300px"
+              class="--standarImageResponsive"
+              srcset="
+                ./assets/images/WEBPImages/Omhega_movil_exploracion-ambiental-geohidrologica_serviceImage.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="--standarImageResponsive __mobileSizeAdjustment"
+              src="./assets/images/PNGimages/Omhega_movil_exploracion-ambiental-geohidrologica_serviceImage.png"
+              alt="Software geofísico especializado"
+            />
+          </picture>
+        </div>
+
+        <!-- Company's service's light description  -->
+
+        <picture
+          class="serviceBox--serviceImageContainer __tabletDesktopDisplay"
+        >
+          <source
+            media="min-weight: 1000px"
+            class="--standarImageResponsive"
+            srcset="
+              ./assets/images/WEBPImages/Omhega_tabletDesktop_exploracion-ambiental-geohidrologica_serviceImage.webp
+            "
+            type="image/png"
+          />
+          <img
+            class="--standarImageResponsive"
+            src="./assets/images/PNGimages/Omhega_tabletDesktop_exploracion-ambiental-geohidrologica_serviceImage.png"
+            alt="Ilustracion de software geofisico especializado"
+          />
+        </picture>
+      </article>
+
+
+      <h2 class="bannerPermiso">Contamos con un permiso de exploración geotérmica en la República Mexicana</h2>
+
+
+
+
+
+      <article class="finalBox">
+        <!-- finalBox -->
+
+        <!-- publicityPhrase  -->
+        <h1>Exploración económica y confiable</h1>
+
+        <p class="--secondaryParagraph">
+          Reduce los costos de exploración hasta en un 70% aplicando métodos
+          geofísicos para caracterizar el subsualo. Maximiza tu inversión y
+          reduce el tiempo de ejecución con nuestros servicios. Asegura tu
+          proyecto con información confiable y el acompañamientto de
+          especialistas.
+        </p>
+
+        <!-- contact & return buttons -->
+        <div class="finalBox--Buttons">
+          <button
+            class="finalBox--contactButton"
+            onclick="window.location.href='https://geotem.lat/Contacto.html'"
+          >
+            Contáctanos
+          </button>
+
+          <button
+            class="finalBox--returnButton"
+            onclick="window.location.href='https://geotem.lat/'"
+          >
+            Regresar
+          </button>
+        </div>
+      </article>
+
+      <article class="clientsLegend">
+        <h2>Acreditaciones y registros</h2>
+
+        <article class="--clientNetwork">
+          <div class="--clientCompanyIcon">
+            <img
+              src="./assets/logos/clientsOmhega/GoldCorpLogo.png"
+              alt="GoldCorp"
+            />
+          </div>
+
+          <div class="--clientCompanyIcon">
+            <img
+              src="./assets/logos/clientsOmhega/penolesLogo.png"
+              alt="Cotactanos por whatsApp"
+            />
+          </div>
+
+          <div class="--clientCompanyIcon">
+            <img
+              src="./assets/logos/clientsOmhega/CFE_Logo.png"
+              alt="Cotactanos por whatsApp"
+            />
+          </div>
+
+          <div class="--clientCompanyIcon">
+            <img
+              src="./assets/logos/clientsOmhega/SGMLogo.png"
+              alt="Cotactanos por whatsApp"
+            />
+          </div>
+
+          <div class="--clientCompanyIcon">
+            <img
+              src="./assets/logos/clientsOmhega/CEAHidalgo.png"
+              alt="Cotactanos por whatsApp"
+            />
+          </div>
+
+          <div class="--clientCompanyIcon">
+            <img
+              src="./assets/logos/clientsOmhega/newgoldLogo.png"
+              alt="Cotactanos por whatsApp"
+            />
+          </div>
+        </article>
+      </article>
+
+      <article class="qualityLegend">
+        <h3>
+          Sistemas de gestión de calidad ISO 9001-2015 | Registrada como empresa con base tecnológica | Registro ARES | Permiso de exploración geotérmica en Tulecheck B.C. | Laboratorios de Contrucción, Agua y Residuos acreditadors ante la ema | Autorización para el tratamiento de suelos contaminados (ASEA) | Certificado de energías limpias
+        </h3>
+      </article>
+    </main>
+
+    <footer class="--globalFooter">
+      <article class="--footerContactInfo">
+        <div class="--contactInfo">
+          <a
+            class="--secondaryParagraph __mailCompany"
+            href="mailto:info@geotem.com.mx"
+            >info@geotem.com.mx</a
+          >
+          <a
+            class="--secondaryParagraph __phoneCompany"
+            href="tel:+525554856032"
+            >55 5485 6032</a
+          >
+          <a
+            class="--secondaryParagraph __phoneCompany"
+            href="tel:+525551610996"
+            >55 5161 0996</a
+          >
+        </div>
+
+        <div class="--secondNavMenu">
+          <ul>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/Contacto.html"
+                target="_blank"
+                >Contáctanos</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Geotem Ingeniería</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Omhega Exploraciones</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >TerraWare</a
+              >
+            </li>
+            <li>
+              <a
+                class="--secondaryParagraph"
+                href="https://geotem.lat/principal.html"
+                >Geoinnova</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="--pricavyPolicy">
+          <a
+            class="--secondaryParagraph"
+            href="https://geotem.lat/Politicas.html"
+            target="_blank"
+            >Política de privacidad</a
+          >
+        </div>
+      </article>
+
+      <div class="--lowerFooter">
+        <article class="--footerSocialNetworks">
+          <a class="" href="https://api.whatsapp.com/send?phone=+5215561667752&text=Hola!%20Me%20interesa%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets/icons/whatsAppIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="https://www.youtube.com/channel/UC_TGlIGid_zw3c2tZeiBJbQ" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets/icons/youTubeIcon.svg"
+                alt="Suscríbete a nuestro canal de YouTube"
+              />
+            </div>
+          </a>
+
+          <a class="" href="https://www.linkedin.com/company/geotem-ingenieria" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets/icons/LinkedInIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="https://twitter.com/Geotem_" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets/icons/twitterIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="https://www.facebook.com/GeotemIngenieria" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets/icons/facebookIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+
+          <a class="" href="https://www.instagram.com/geotem.mx/" target="_blank">
+            <div class="--socialNetworkIcon">
+              <img
+                src="./assets/icons/instagramIcon.svg"
+                alt="Cotactanos por whatsApp"
+              />
+            </div>
+          </a>
+        </article>
+
+        <article class="--footerCompanyRights">
+          <p class="--notesParagraph">
+            © 2021 GEOTEM Ingeniería S.A. de C.V. Todos los derechos reservados.
+          </p>
+        </article>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

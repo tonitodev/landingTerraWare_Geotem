@@ -10,9 +10,9 @@ header
 		a
 			padding: 5px 10px
 			border-radius: 4px
-			background: rgba(255, 255, 255, .5)
-			color: $secondColor
-			font-weight: 600
+			background: rgba(255, 255, 255, .1)
+			color: $baseWhite
+
 
 
 clientsStyles()
@@ -22,42 +22,39 @@ clientsStyles()
 
 	text-align: center
 
-.__mainBanner-omhega
-	background-image: url('../assets/images/WEBPImages/Omhega_Movil_imagen-exploracion-ambiental_mainBannerBackground.webp'), url('../assets/images/PNGimages/Omhega_Movil_imagen-exploracion-ambiental_mainBannerBackground.png')
+.__mainBanner-geoinnova
+	background-image: url('../assets/images/WEBPImages/Geoinnova_mobile_imagen-exploracion-geotermica_mainBannerBackground.webp'), url('../assets/images/PNGimages/Geoinnova_mobile_imagen-exploracion-geotermica_mainBannerBackground.png')
 	background-position: center
 	background-size: cover
 	background-repeat: none
 
-
-	.__companyLogoContainer-omhega
-		img
-			max-width: 180px
-		.__mainParagraph-omhega
-			color: $textColor
+	.__companyLogoContainer-geoinnova
+		margin-top: 15%
+		picture
+			max-width: 250px
+		.__mainParagraph-geoinnova
+			color: $baseWhite
 			font-size: 1.4rem
-			font-weight: 500
 
-	.__descriptionAndButtonContainer-omhega
+	.mainBanner--descriptionAndButtonContainer
+		margin-top: 50px
+
+	.__descriptionAndButtonContainer-geoinnova
+
 		h1
-			color: $secondColor
-			font-size: 2.8rem
-		.__description-omhega
-			margin-bottom: 30px
-		h2
-			font-size: 1.8rem
-			color: $textColor
+			color: $baseWhite
 			margin-bottom: 50px
 
 .serviceBox
 
-	.--omhega-listStyle
+	.--geoinnova-listStyle
 
 		position: relative
 
 		padding: 30px 5% 0 5% 
 		list-style: none	
 
-		.__numeralia-omhega
+		.__numeralia-geoinnova
 			display: flex
 			align-items: center
 			flex-wrap: wrap
@@ -77,7 +74,7 @@ clientsStyles()
 			line-height: 54px
 			color: $mainColor
 
-		.__numberIcon-omhega
+		.__numberIcon-geoinnova
 			width: 70px
 			font-size: 3.6rem
 			font-weight: 600
@@ -94,11 +91,14 @@ clientsStyles()
 			flex-wrap: nowrap
 			justify-content: start
 
-	.__omhega-listStyle-excavation
-		padding-top: 30px
+
+.bannerPermiso
+	text-align: center
+	color: $secondAlternativeColor
+	margin: 80px 20px
 
 .finalBox
-	margin-top: 50px
+	margin-bottom: 80px
 
 .clientsLegend
 	clientsStyles()
@@ -106,25 +106,29 @@ clientsStyles()
 		font-size: 2.4rem
 
 .qualityLegend
-	h3
-		font-size: 1.2rem
 	margin: 0 20px 80px 20px
+	text-align: center	
+	h3
+		font-size: 1rem
+		line-height: 150%
+		color: $headerColor
+		font-weight: 400
 
-	text-align: center
-	line-height: 200%
 
-	color: $headerColor
 
-/* Ajustes de estilos omhega para tablets */
+
+/* Ajustes de estilos geoinnova para tablets */
 
 @media (min-width: 450px)
 
-	.__mainBanner-omhega
-		background-image: url('../assets/images/WEBPImages/Omhega_tabletDesktop_imagen-exploracion-ambiental_mainBannerBackground.webp'), url('../assets/images/PNGimages/Omhega_tabletDesktop_imagen-exploracion-ambiental_mainBannerBackground.png')
-
+	.__mainBanner-geoinnova
+		background-image: url('../assets/images/WEBPImages/Geoinnova_tabletDesktop_imagen-exploracion-ambiental_mainBannerBackground.webp'), url('../assets/images/PNGimages/Geoinnova_tabletDesktop_imagen-exploracion-ambiental_mainBannerBackground.png')
+		
+		.__companyLogoContainer-geoinnova
+			margin-top: 0
 
 	.serviceBox
-		.--omhega-listStyle
+		.--geoinnova-listStyle
 			
 			grid-area: information
 			
@@ -132,7 +136,7 @@ clientsStyles()
 			margin: 0 0 0 5%
 			padding: 0
 
-			.__numeralia-omhega
+			.__numeralia-geoinnova
 				
 				justify-content: start
 
@@ -141,28 +145,19 @@ clientsStyles()
 					max-width: 160px
 					text-align: start
 
-		.__omhega-listStyle-excavation
-			margin: 0 0 0 10%;
 
-/* Ajustes de estilos omhega para Desktop */
+
+/* Ajustes de estilos geoinnova para Desktop */
 
 @media (min-width: 1000px)
 	
 	.mainBanner
-		.__companyLogoContainer-omhega
-			img
-				max-width: 210px
+		.__companyLogoContainer-geoinnova
+			picture
+				max-width: 500px
 		.mainBanner--descriptionAndButtonContainer
 			.mainBanner--description
 				margin: 0px auto 30px auto
-			.servicesList__desktopDisplay
-				#omhegaServices
-					ul
-						column-count: 2
-						li
-							a
-								color: $textColor
-								font-weight: 600
 			.mainBanner--servicesButton__desktopDisplay
 				margin-top: 50px
 				display: block
