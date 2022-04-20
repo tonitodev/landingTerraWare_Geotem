@@ -1,0 +1,23 @@
+@import "./A-geotem--mainStyles.styl"
+@import "./A-geotem--buttonStyles.styl"
+
+@import "./B-geotemLanding--basicStyles.styl"
+
+@import "./A-geotem--footerStyle.styl"
+
+.mainBanner
+	background-image: url('../assets_gpogtmLandingPages/images/WEBPImages/modelogeofisico3dPrincipal.webp'), url('../assets_gpogtmLandingPages/images/PNGimages/modelogeofisico3dPrincipal.png')
+	background-position: center
+	background-size: cover
+	background-repeat: none
+
+	@media (min-width: 450px)
+		background-image: url('../assets_gpogtmLandingPages/images/AVIFImages/TerraWareBackground_Tablet_ModeloGeofisico3dPrincipal.avif'), url('../assets_gpogtmLandingPages-TerraWare/images/WEBPImages/TerraWareBackground_Tablet_ModeloGeofisico3dPrincipal.webp'), url('../assets_gpogtmLandingPages/images/PNGimages/TerraWareBackground_Tablet_ModeloGeofisico3dPrincipal.png')
+
+@media (min-width: 1000px)
+	
+	.mainBanner
+		.mainBanner--descriptionAndButtonContainer
+			.mainBanner--servicesButton__desktopDisplay
+				margin-top: 50px
+				display: block
